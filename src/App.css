@@ -1,38 +1,189 @@
-.App {
-  text-align: center;
+body {
+  background-color: #fff;
+  font-family: 'Roboto', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1, h2 {
+  font-family: 'Playfair Display', serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 5px 15px rgba(14, 3, 216, 0.06);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#nav li {
+  list-style: none;
+  cursor: pointer;
+  color: #ffffff;
+}
+
+#hero {
+  margin-top: 150px;
+}
+
+.custom-btn {
+  font-size: 20px;
+  padding: 15px 30px;
+  color: #000;
+  background-color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+  border: solid;
+  transition: 0.3s;
+  border-color: #3b6ea0;
+}
+
+.custom-btn:hover {
+  background-color: #3b6ea0;
+  color: #e9ecef;
+  border-color: #3b6ea0;
+  box-shadow: 0 0 10px rgba(59, 110, 160, 0.5);
+}
+
+.bg-primary-light {
+  background-color: #cfe0f0 !important;
+  transition: all 0.3s ease-in-out;
+}
+
+.cli-box:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+h6 {
+  color: #088178 !important;
+  font-family: Times, "Times New Roman", serif;
+  background-color: #16212d;
+}
+
+.fe-box {
+  transition: all 0.3s ease-in-out;
+}
+
+.fe-box:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.section-p1 .row {
+  margin-top: 20px;
+}
+
+#u {
+  background-color: #3b6ea0;
+}
+
+#app {
+  margin-left: 12%;
+  margin-top: 170px;
+}
+
+#app h2 {
+  font-size: 50px;
+}
+
+#app p {
+  font-size: 20px;
+}
+
+#date-input {
+  margin-top: 70px;
+  margin-left: -9%;
+  font-size: 25px;
+}
+
+.custom-input {
+  font-size: 26px;
+  padding: 10px;
+  border: none;
+  color: #4a4a4a;
+  font-family: 'Roboto', sans-serif;
+}
+
+.form-section {
+  margin-bottom: 200px;
+}
+
+.form-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.input-group {
+  flex: 1 1 calc(50% - 20px);
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.input-group label {
+  font-weight: bold;
+  margin-bottom: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.input-group input,
+.input-group select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+}
+
+.input-group input::placeholder {
+  font-style: italic;
+  color: #999;
+}
+
+@media (max-width: 576px) {
+  #app {
+    margin-left: 0;
+    margin-top: 30px;
+    text-align: center;
   }
-  to {
-    transform: rotate(360deg);
+
+  #date-input {
+    margin-left: -2%;
+    margin-top: 30%;
+    padding: 0 15px;
+    margin-bottom: 7%;
   }
+
+  .form-grid {
+    display: block;
+  }
+
+  .input-group {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .custom-btn {
+    margin-left: 20%;
+  }
+}
+
+
+.home-container {
+  cursor: none;
+}
+
+.home-container::after {
+  content: "";
+  position: fixed;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #3b6ea0;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+}
+
+.home-container:hover::after {
+  display: block;
 }
