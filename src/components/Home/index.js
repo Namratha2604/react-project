@@ -98,6 +98,130 @@
 
 
 
+// import React from 'react';
+// import HeroSection from './HeroSection';
+// import IntroSection from './IntroSection';
+// import ServiceSection from './ServiceSection';
+// import { FeatureSection } from './FeatureCard';
+// import { TestimonialSection } from './TestimonialCard';
+// import NewsletterSection from './NewsletterSection';
+
+// function Home() {
+//   return (
+//     <>
+//       <HeroSection />
+//       <IntroSection />
+//       <FeatureSection />
+//       <ServiceSection />
+//       <TestimonialSection />
+//       <NewsletterSection />
+
+//       <style jsx global>{`
+//         .slide-image {
+//           opacity: 0;
+//           transform: translateX(-100%);
+//           transition: opacity 2s ease-out, transform 2s ease-out;
+//         }
+
+//         .slide-image.slide-in {
+//           opacity: 1;
+//           transform: translateX(0);
+//         }
+
+//         .custom-btn {
+//           display: inline-block;
+//           padding: 10px 30px;
+//           background-color: #3b6ea0;
+//           color: white;
+//           text-decoration: none;
+//           border-radius: 4px;
+//           transition: background-color 0.3s ease;
+//         }
+
+//         .custom-btn:hover {
+//           background-color: #2d5780;
+//           color: white;
+//         }
+
+//         .dark-mode {
+//           background-color: #1f2937;
+//           color: white;
+//         }
+//       `}</style>
+//     </>
+//   );
+// }
+
+// export default Home;
+
+
+
+
+
+// import React from 'react';
+// import HeroSection from './HeroSection';
+// import IntroSection from './IntroSection';
+// import ServiceSection from './ServiceSection';
+// import { FeatureSection } from './FeatureCard';
+// import { TestimonialSection } from './TestimonialCard';
+// import NewsletterSection from './NewsletterSection';
+
+// function Home() {
+//   return (
+//     <>
+//       <HeroSection />
+//       <IntroSection />
+//       <FeatureSection />
+//       <ServiceSection />
+//       <TestimonialSection />
+//       <NewsletterSection />
+
+//       <style jsx global>{`
+//         .slide-image {
+//           opacity: 0;
+//           transform: translateX(-100%);
+//           transition: opacity 2s ease-out, transform 2s ease-out;
+//         }
+
+//         .slide-image.slide-in {
+//           opacity: 1;
+//           transform: translateX(0);
+//         }
+
+//         .custom-btn {
+//           display: inline-block;
+//           padding: 10px 30px;
+//           background-color: #3b6ea0;
+//           color: white;
+//           text-decoration: none;
+//           border-radius: 4px;
+//           transition: background-color 0.3s ease;
+//         }
+
+//         .custom-btn:hover {
+//           background-color: #2d5780;
+//           color: white;
+//         }
+
+//         .dark-mode {
+//           background-color: #1f2937;
+//           color: white;
+//         }
+
+//         @media (max-width: 767px) {
+//           .fe-box {
+//             max-width: 200px;
+//             margin-left: auto;
+//             margin-right: auto;
+//           }
+//         }
+//       `}</style>
+//     </>
+//   );
+// }
+
+// export default Home;
+
 import React from 'react';
 import HeroSection from './HeroSection';
 import IntroSection from './IntroSection';
@@ -146,6 +270,14 @@ function Home() {
         .dark-mode {
           background-color: #1f2937;
           color: white;
+        }
+
+        @media (max-width: 767px) {
+          .fe-box, .cli-box {
+            max-width: 200px;
+            margin-left: auto;
+            margin-right: auto;
+          }
         }
       `}</style>
     </>
