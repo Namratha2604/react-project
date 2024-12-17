@@ -131,13 +131,13 @@ function Header() {
 
   return (
     <section id="header" className={`bg-light ${nightMode ? 'dark-mode' : ''}`}>
-      <nav className="navbar navbar-expand-lg navbar-light" id="nav" style={{ backgroundColor: nightMode ? '#1f2937' : '#3b6ea0', padding: '15px' }}>
+      <nav className={`navbar navbar-expand-lg navbar-${!nightMode ? 'light': 'dark'}`} id="nav" style={{ backgroundColor: nightMode ? '#1f2937' : '#3b6ea0', padding: '15px' }}>
         <div className="container">
           {/* Logo Section */}
           <Link className="navbar-brand d-flex align-items-center" to="/">
             <div className="d-flex align-items-center">
               <span className="fs-1 me-2" role="img" aria-label="tooth">
-                <img src={logo} alt="WhatsUp Dentist Logo" style={{ height: '50px', width: 'auto' }} className="me-2" />
+                <img src={logo} alt="WhatsUp Dentist Logo" style={{ height: '100px', width: 'auto' }} className="me-2" />
               </span>
             </div>
           </Link>

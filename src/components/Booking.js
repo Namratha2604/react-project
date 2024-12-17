@@ -1,10 +1,13 @@
 import React, { useState } from 'react';
+import { useParams, useSearchParams } from 'react-router-dom';
 
 function Booking() {
+  const [params] = useSearchParams()
+  const mobileNumber = params.get('mobileNumber')
   const [formData, setFormData] = useState({
     name: '',
     email: '',
-    phone: '',
+    phone: mobileNumber.match(/^(\+\d{1,2}\s?)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$/) ? mobileNumber : '', // TODO: Verify validation 
     appointmentDate: '',
     appointmentTime: '',
     age: '',
@@ -71,7 +74,7 @@ function Booking() {
 
           <div className="input-group">
             <label htmlFor="phone">Phone number</label>
-            <input type="tel" id="phone" name="phone" pattern="\d{10}" maxLength="10" placeholder="0000000000" required onChange={handleChange} />
+            <input type="tel" id="phone" name="phone" pattern="\d{10}" maxLength="10" placeholder="0000000000" defaultValue={formData.phone} required onChange={handleChange} />
           </div>
 
           <div className="input-group">
